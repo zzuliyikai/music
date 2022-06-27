@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://117.50.174.22:3306/music_db?serverTimezone=UTC
+    username: root
+    password: 1234567
+    type: com.alibaba.druid.pool.DruidDataSource
+  servlet:
+    multipart:
+      max-file-size: 10MB #上传一个文件最大值 默认是1MB
+      max-request-size: 20MB #上传多个文件最大值  默认是10MB
+
+localPath: /home/yikai/music/
+
+
